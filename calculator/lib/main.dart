@@ -230,6 +230,7 @@ class SplashScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20.0),
+            // LinearProgressIndicator(),
             CircularProgressIndicator(), // You can use a loading indicator here
           ],
         ),
