@@ -75,6 +75,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  image_pixels:
+    dependency: "direct main"
+    description:
+      name: image_pixels
+      sha256: "205ba56bf115c30a2b1ac9a8d6dc36f7c634000af038d2bab37bd2901eb0d219"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.0.1"
   lints:
     dependency: transitive
     description:
@@ -186,3 +194,4 @@ packages:
     version: "0.1.4-beta"
 sdks:
   dart: ">=3.1.2 <4.0.0"
+  flutter: ">=2.0.0"
