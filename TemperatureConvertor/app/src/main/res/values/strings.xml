@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Temperature Convertor</string>
+    <string name="textboxhint">Enter Your Temperature</string>
+
+</resources>
