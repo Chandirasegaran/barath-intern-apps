@@ -8,61 +8,102 @@
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="175dp">
 
-    <TextView
-        android:id="@+id/apptitle"
+    <Button
+        android:id="@+id/ctf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Temperature Convertor"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="35dp" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="314dp"
-        android:layout_height="227dp"
-        app:srcCompat="@drawable/tempicon_24"
-        tools:layout_editor_absoluteX="47dp"
-        tools:layout_editor_absoluteY="102dp" />
+        android:layout_marginEnd="1dp"
+        android:text="C -> F"
+        app:layout_constraintBaseline_toBaselineOf="@+id/ftc"
+        app:layout_constraintEnd_toStartOf="@+id/ftc"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/ftc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="100dp"
+        android:text="F -> C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ctf" />
+
+    <TextView
+        android:id="@+id/temptitle"
+        android:layout_width="308dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="274dp"
+        android:text="Temperature:"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/tempvalue"
-        android:layout_width="311dp"
-        android:layout_height="40dp"
+        android:layout_width="313dp"
+        android:layout_height="48dp"
 
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="213dp"
+        android:background="@drawable/rectangle"
         android:drawableLeft="@drawable/tempicon_24"
         android:drawablePadding="5dp"
         android:ems="10"
         android:hint="@string/textboxhint"
         android:inputType="number"
         android:paddingLeft="10dp"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="393dp" />
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/temptitle" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="407dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apptitle"
+        app:srcCompat="@drawable/tempicon_24" />
 
     <TextView
-        android:id="@+id/temptitle"
-        android:layout_width="308dp"
-        android:layout_height="31dp"
-        android:text="Temperature:"
-        tools:layout_editor_absoluteX="51dp"
-        tools:layout_editor_absoluteY="362dp" />
-
-    <Button
-        android:id="@+id/ctf"
+        android:id="@+id/apptitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="355dp"
+        android:text="Temperature Convertor"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/temptitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        android:text="C -> F"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="502dp" />
-
-    <Button
-        android:id="@+id/ftc"
+    <TextView
+        android:id="@+id/display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="F -> C"
-        tools:layout_editor_absoluteX="246dp"
-        tools:layout_editor_absoluteY="502dp" />
+        android:layout_marginStart="157dp"
+        android:layout_marginEnd="170dp"
+        android:layout_marginBottom="46dp"
+        android:textColor="#3BBE07"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
